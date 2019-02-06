@@ -4,11 +4,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/white"
-    tools:context=".Picture2">
+    tools:context=".PicturesFragment">
 
     <ImageView
+        android:id="@+id/mainImageView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/world_with_landmarks_background_watercolor_style_23_2147765646"/>
+        android:src="@drawable/vacation_holidays_background_with_realistic_globe_suitcase_photo_camera_1284_10476"/>
 
 </FrameLayout>
