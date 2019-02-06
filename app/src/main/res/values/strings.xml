@@ -1,6 +1,15 @@
 <resources>
     <string name="app_name">TourGuideApp</string>
     <string name="lets_go">Let\'s Go</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
+    <string name="places">Places</string>
+    <string name="activities">Activities</string>
+    <string name="nature">Nature</string>
+    <string name="hotels">Hotels</string>
+    <string name="shopping">Shopping</string>
+    <string name="restaurants">Restaurants</string>
+    <string name="beaches">Beaches</string>
+    <string name="relax">Relax</string>
+    <string name="salalah">Salalah</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
 </resources>

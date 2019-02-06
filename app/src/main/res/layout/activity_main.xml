@@ -11,25 +11,24 @@
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/view_pager"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-    </androidx.viewpager.widget.ViewPager>
+        android:layout_height="match_parent" />
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabDots"
-        android:layout_above="@id/lets_go_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_above="@id/lets_go_button"
         app:tabBackground="@drawable/tab_selector"
         app:tabGravity="center"
-        app:tabIndicatorColor = "@color/colorAccent"
-        app:tabIndicatorHeight="0dp"/>
+        app:tabIndicatorColor="@color/colorAccent"
+        app:tabIndicatorHeight="0dp" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/lets_go_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:text="@string/lets_go"
-        android:layout_margin="@dimen/main_screen_margins"/>
+        android:layout_margin="@dimen/main_screen_margins"
+        android:text="@string/lets_go" />
 
 </RelativeLayout>

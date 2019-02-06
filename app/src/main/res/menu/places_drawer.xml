@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:title="@string/activities">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nature"
+                    android:icon="@drawable/ic_nature_black_24dp"
+                    android:title="@string/nature" />
+
+                <item
+                    android:id="@+id/shopping"
+                    android:icon="@drawable/ic_shopping_cart_black_24dp"
+                    android:title="@string/shopping" />
+
+                <item
+                    android:id="@+id/beaches"
+                    android:icon="@drawable/ic_beach_access_black_24dp"
+                    android:title="@string/beaches" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="@string/relax">
+        <menu>
+            <item
+                android:id="@+id/hotels"
+                android:icon="@drawable/ic_hotel_black_24dp"
+                android:title="@string/hotels" />
+
+            <item
+                android:id="@+id/restaurants"
+                android:icon="@drawable/ic_restaurant_default_24dp"
+                android:title="@string/restaurants" />
+        </menu>
+    </item>
+
+
+</menu>
