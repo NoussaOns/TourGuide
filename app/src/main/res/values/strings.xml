@@ -13,6 +13,37 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!--Restaurants-->
+    <string name="hamdan_plaza_restaurant">Hamdan Plaza Restaurant</string>
+    <string name="sammak_restaurant">Sammak Restaurant</string>
+
+    <!--hotels-->
+    <string name="hamdan_plaza_hotel">Hamdan Plaza</string>
+    <string name="gradens_hotel">Gardens Hotel</string>
+    <string name="rotana_hotel">Rotana</string>
+
+    <!--nature-->
+    <string name="arzat_nature">Arzat Spring</string>
+    <string name="arzat_nature_subtitle">Lorem ipsum dolor sit amet, praesent nisl at at sollicitudin,
+        leo diam vivamus leo amet. </string>
+    <string name="darbat_nature">Darbat Spring</string>
+    <string name="himran_nature">Himran Spring</string>
+    <string name="jarzeez_nature">Jarzeez Spring</string>
+
+
+    <!--Shopping-->
+    <string name="carrefour_shopping">Carrefour</string>
+    <string name="lulu_shopping">Lulu</string>
+    <string name="haffa_shopping">Souk Al Hisn</string>
+
+    <!--beaches-->
+    <string name="maghseel_beach">Maghseel</string>
+    <string name="dahareez_beach">Dahareez</string>
+    <string name="haffa_beach">Haffa Beach</string>
+    <string name="mirbat_beach">Mirbat Beach</string>
+
+    <!--buttons-->
+    <string name="book_now">Book Now</string>
+    <string name="go_online">Go Online</string>
+    <string name="on_map">On map</string>
 </resources>

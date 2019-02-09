@@ -1,0 +1,83 @@
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_main_1_1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/main_card_margin_horizontal"
+    android:layout_marginTop="@dimen/main_card_margin_vertical"
+    android:layout_marginEnd="@dimen/main_card_margin_horizontal"
+    android:layout_marginBottom="@dimen/main_card_margin_vertical"
+    card_view:cardCornerRadius="@dimen/card_recycler_corner_radius"
+    card_view:cardElevation="@dimen/card_recycler_elevation">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/hotel_img_main_card_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/hamdan_plaza_hotel" />
+
+        <TextView
+            android:id="@+id/hotel_tv_card_main_1_title"
+            style="@style/TextAppearance.AppCompat.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hotel_img_main_card_1"
+            android:layout_marginStart="@dimen/card_title_margin"
+            android:layout_marginTop="@dimen/card_title_margin_top"
+            android:layout_marginEnd="@dimen/card_title_margin"
+            android:text="@string/hamdan_plaza_hotel"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/hotel_tv_card_main1_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hotel_tv_card_main_1_title"
+            android:layout_marginStart="@dimen/card_subtitle_margin"
+            android:layout_marginTop="@dimen/card_button_margin"
+            android:layout_marginEnd="@dimen/card_subtitle_margin"
+            android:layout_marginBottom="@dimen/card_subtitle_margin"
+            android:text="@string/arzat_nature_subtitle" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/hotel_btn_card_main1_action1"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hotel_tv_card_main1_subtitle"
+            android:layout_marginStart="@dimen/card_button_margin"
+            android:layout_marginTop="@dimen/card_button_margin"
+            android:layout_marginBottom="@dimen/card_button_margin"
+            android:text="@string/on_map" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/hotel_btn_card_main2_action1"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hotel_tv_card_main1_subtitle"
+            android:layout_margin="@dimen/card_button_margin"
+            android:layout_toEndOf="@id/hotel_btn_card_main1_action1"
+            android:text="@string/book_now" />
+
+        <TextView
+            android:id="@+id/hotel_tv_card_main_1_price"
+            style="@style/TextAppearance.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_below="@id/hotel_tv_card_main1_subtitle"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/price_text_tight_margin"
+            android:gravity="center"
+            android:text="35$"
+            android:textColor="@android:color/black" />
+
+    </RelativeLayout>
+</com.google.android.material.card.MaterialCardView>
