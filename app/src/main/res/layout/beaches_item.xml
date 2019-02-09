@@ -21,7 +21,7 @@
             android:layout_alignParentTop="true"
             android:adjustViewBounds="true"
             android:scaleType="centerCrop"
-            android:src="@drawable/maghseel" />
+            android:src="@drawable/maghseel_beaches" />
 
         <TextView
             android:id="@+id/beaches_tv_card_main_1_title"

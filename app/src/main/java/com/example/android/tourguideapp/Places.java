@@ -12,6 +12,7 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import butterknife.BindView;
+import butterknife.ButterKnife;
 
 public class Places extends AppCompatActivity {
 
@@ -27,6 +28,7 @@ public class Places extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_places);
 
+        ButterKnife.bind(this);
         //if the activity is intialized for the first time or
         // we hit the back button and came again to it
         if (savedInstanceState == null) {
@@ -37,6 +39,7 @@ public class Places extends AppCompatActivity {
             navigationView.setCheckedItem(R.id.nav_nature);
         }
 
+        //set the title to the clicked item of the navigation drawer
         toolbar.setTitle(navigationView.getCheckedItem().getTitle());
 
         //set the drawer navigation bar

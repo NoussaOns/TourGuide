@@ -21,7 +21,7 @@
             android:layout_alignParentTop="true"
             android:adjustViewBounds="true"
             android:scaleType="centerCrop"
-            android:src="@drawable/arzat" />
+            android:src="@drawable/arzat_nature" />
 
         <TextView
             android:id="@+id/nature_tv_card_main_1_title"

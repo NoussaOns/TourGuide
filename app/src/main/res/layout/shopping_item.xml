@@ -21,7 +21,7 @@
             android:layout_alignParentTop="true"
             android:adjustViewBounds="true"
             android:scaleType="centerCrop"
-            android:src="@drawable/carrefour" />
+            android:src="@drawable/carrefour_shopping" />
 
         <TextView
             android:id="@+id/shopping_tv_card_main_1_title"
