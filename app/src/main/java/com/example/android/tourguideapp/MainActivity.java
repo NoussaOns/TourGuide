@@ -13,17 +13,18 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
+import butterknife.BindView;
 
 public class MainActivity extends AppCompatActivity {
 
+    @BindView(R.id.view_pager)
+    ViewPager viewPager;
+    @BindView(R.id.tabDots)
+    TabLayout tabLayout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-
-        //Find the view pager
-        ViewPager viewPager = findViewById(R.id.view_pager);
 
         //pager adapter
         PagerAdapter adapter = new FragmentPagerAdapter(getSupportFragmentManager()) {
@@ -48,7 +49,6 @@ public class MainActivity extends AppCompatActivity {
         //set the adapter into the viewPager
         viewPager.setAdapter(adapter);
 
-        TabLayout tabLayout = findViewById(R.id.tabDots);
         tabLayout.setupWithViewPager(viewPager, true);
 
         MaterialButton button = findViewById(R.id.lets_go_button);

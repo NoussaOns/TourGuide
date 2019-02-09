@@ -27,8 +27,6 @@ public class Places extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_places);
 
-        navigationView = findViewById(R.id.nav_view);
-
         //if the activity is intialized for the first time or
         // we hit the back button and came again to it
         if (savedInstanceState == null) {
@@ -39,8 +37,6 @@ public class Places extends AppCompatActivity {
             navigationView.setCheckedItem(R.id.nav_nature);
         }
 
-        //set the toolbar
-        toolbar = findViewById(R.id.toolbar);
         toolbar.setTitle(navigationView.getCheckedItem().getTitle());
 
         //set the drawer navigation bar
