@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         //Find the view pager
-        ViewPager viewPager = (ViewPager) findViewById(R.id.view_pager);
+        ViewPager viewPager = findViewById(R.id.view_pager);
 
         //pager adapter
         PagerAdapter adapter = new FragmentPagerAdapter(getSupportFragmentManager()) {

@@ -1,7 +1,11 @@
 package com.example.android.tourguideapp;
 
 import android.os.Bundle;
+import android.view.MenuItem;
 
+import com.google.android.material.navigation.NavigationView;
+
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -10,19 +14,70 @@ import androidx.drawerlayout.widget.DrawerLayout;
 
 public class Places extends AppCompatActivity {
 
-    private DrawerLayout drawer;
 
+    private DrawerLayout drawer;
+    private Toolbar toolbar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_places);
 
+        NavigationView navigationView = findViewById(R.id.nav_view);
+
+        //if the activity is intialized for the first time or
+        // we hit the back button and came again to it
+        if (savedInstanceState == null) {
+            //when we start the activity we open the nature fragment immediately
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                    new NatureFragment()).commit();
+            //check the nature option
+            navigationView.setCheckedItem(R.id.nav_nature);
+        }
+
         //set the toolbar
-        Toolbar toolbar = findViewById(R.id.toolbar);
-        toolbar.setTitle(getString(R.string.places));
+        toolbar = findViewById(R.id.toolbar);
+        toolbar.setTitle(navigationView.getCheckedItem().getTitle());
 
         //set the drawer navigation bar
         drawer = findViewById(R.id.drawer_layout);
+
+
+        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+                switch (menuItem.getItemId()) {
+                    case R.id.nav_nature:
+                        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                                new NatureFragment()).commit();
+                        break;
+
+                    case R.id.nav_beaches:
+                        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                                new BeachesFragment()).commit();
+                        break;
+
+                    case R.id.nav_hotels:
+                        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                                new HotelsFragment()).commit();
+                        break;
+
+                    case R.id.nav_restaurants:
+                        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                                new RestaurantsFragment()).commit();
+                        break;
+
+                    case R.id.nav_shopping:
+                        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                                new ShoppingFragment()).commit();
+                        break;
+                }
+
+                toolbar.setTitle(menuItem.getTitle());
+                //close drawer after selecting the item
+                drawer.closeDrawer(GravityCompat.START);
+                return true;
+            }
+        });
 
         //to handle the rotating of the navigation button in the toolbar
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer,

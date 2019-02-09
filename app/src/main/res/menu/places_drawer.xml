@@ -6,17 +6,17 @@
         <menu>
             <group android:checkableBehavior="single">
                 <item
-                    android:id="@+id/nature"
+                    android:id="@+id/nav_nature"
                     android:icon="@drawable/ic_nature_black_24dp"
                     android:title="@string/nature" />
 
                 <item
-                    android:id="@+id/shopping"
+                    android:id="@+id/nav_shopping"
                     android:icon="@drawable/ic_shopping_cart_black_24dp"
                     android:title="@string/shopping" />
 
                 <item
-                    android:id="@+id/beaches"
+                    android:id="@+id/nav_beaches"
                     android:icon="@drawable/ic_beach_access_black_24dp"
                     android:title="@string/beaches" />
             </group>
@@ -25,15 +25,17 @@
 
     <item android:title="@string/relax">
         <menu>
-            <item
-                android:id="@+id/hotels"
-                android:icon="@drawable/ic_hotel_black_24dp"
-                android:title="@string/hotels" />
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_hotels"
+                    android:icon="@drawable/ic_hotel_black_24dp"
+                    android:title="@string/hotels" />
 
-            <item
-                android:id="@+id/restaurants"
-                android:icon="@drawable/ic_restaurant_default_24dp"
-                android:title="@string/restaurants" />
+                <item
+                    android:id="@+id/nav_restaurants"
+                    android:icon="@drawable/ic_restaurant_default_24dp"
+                    android:title="@string/restaurants" />
+            </group>
         </menu>
     </item>
 
