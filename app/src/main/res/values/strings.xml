@@ -16,6 +16,7 @@
     <!--Restaurants-->
     <string name="hamdan_plaza_restaurant">Hamdan Plaza Restaurant</string>
     <string name="sammak_restaurant">Sammak Restaurant</string>
+    <string name="sammak_url">https://www.google.com/travel/hotels/%D8%B5%D9%84%D8%A7%D9%84%D8%A9?ap=YhQxNTc3MzM3NjYwNTgwNTA1NjE5OA&amp;g2lb=4208993%2C4223281%2C4220469%2C4226113&amp;hl=ar&amp;gl=om&amp;un=0&amp;q=%D9%81%D9%86%D8%AF%D9%82%20%D8%A7%D9%84%D8%AC%D9%88%D9%8A%D8%B1%D8%A9%20%D8%B5%D9%84%D8%A7%D9%84%D8%A9&amp;rp=OAJAAEgC&amp;ictx=1&amp;ved=2ahUKEwjsqZqz37HgAhUEC-wKHYE9BwYQvS4wAXoECAUQJg&amp;hrf=CgQIMhAAIgNPTVIqFgoHCOMPEAIYExIHCOMPEAIYFBgBKACwAQCaAQwSCti12YTYp9mE2KmiARcKCS9tLzA1N2oyNBIK2LXZhNin2YTYqZIBAiAB&amp;tcfs=EjEKCS9tLzA1N2oyNBIK2LXZhNin2YTYqRoYCgoyMDE5LTAyLTE5EgoyMDE5LTAyLTIwUgA</string>
 
     <!--hotels-->
     <string name="hamdan_plaza_hotel">Hamdan Plaza</string>
@@ -25,7 +26,8 @@
     <string name="rotana_hotel">Rotana</string>
     <string name="rotana_url">https://www.rotana.com/rotanahotelandresorts/oman/salalah/salalahrotanaresort</string>
     <string name="crowne_plaza_hotel">Crowne Plaza</string>
-    <string name="crowne_plaza_url">https://www.crowneplaza.com/hotels/ae/ar/find-hotels/hotel/rates?qDest=Po%20Box%20870,%20Salalah,%20OM&amp;qCiMy=12019&amp;qCiD=10&amp;qCoMy=12019&amp;qCoD=11&amp;qAdlt=2&amp;qChld=0&amp;qRms=1&amp;qRtP=6CBARC&amp;qIta=99618783&amp;qSlH=SLLSS&amp;qSlRc=KNGS&amp;qAkamaiCC=US&amp;qBrs=re.ic.in.vn.cp.vx.hi.ex.rs.cv.sb.cw.ma.ul.ki.va&amp;qAAR=6CBARC&amp;qWch=0&amp;qSmP=1&amp;cm_mmc=hpa_OM_desktop_SLLSS_mapresults_1_OMR_2019-02-10_default_1992967289__false&amp;setPMCookies=true&amp;glat=META_hpa_OM_desktop_SLLSS_mapresults_1_OMR_2019-02-10_default_1992967289__false&amp;qRad=30&amp;qRdU=mi&amp;srb_u=1</string>
+    <string name="crowne_plaza_url">https://www.crowneplaza.com/hotels/ae/ar/find-hotels/hotel/rates?qDest=Po%20Box%20870,%20Salalah,%20OM&amp;amp;qCiMy=12019&amp;amp;qCiD=10&amp;amp;qCoMy=12019&amp;amp;qCoD=11&amp;amp;qAdlt=2&amp;amp;qChld=0&amp;amp;qRms=1&amp;amp;qRtP=6CBARC&amp;amp;qIta=99618783&amp;amp;qSlH=SLLSS&amp;amp;qSlRc=KNGS&amp;amp;qAkamaiCC=US&amp;amp;qBrs=re.ic.in.vn.cp.vx.hi.ex.rs.cv.sb.cw.ma.ul.ki.va&amp;amp;qAAR=6CBARC&amp;amp;qWch=0&amp;amp;qSmP=1&amp;amp;cm_mmc=hpa_OM_desktop_SLLSS_mapresults_1_OMR_2019-02-10_default_1992967289__false&amp;amp;setPMCookies=true&amp;amp;glat=META_hpa_OM_desktop_SLLSS_mapresults_1_OMR_2019-02-10_default_1992967289__false&amp;amp;qRad=30&amp;amp;qRdU=mi&amp;amp;srb_u=1</string>
+    
     <!--nature-->
     <string name="arzat_nature">Arzat Spring</string>
     <string name="arzat_nature_subtitle">Lorem ipsum dolor sit amet, praesent nisl at sollicitudin,
