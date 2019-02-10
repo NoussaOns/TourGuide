@@ -3,6 +3,10 @@ package com.example.android.tourguideapp;
 import android.os.Bundle;
 import android.view.MenuItem;
 
+import com.example.android.tourguideapp.fragment.BeachesFragment;
+import com.example.android.tourguideapp.fragment.HotelsFragment;
+import com.example.android.tourguideapp.fragment.RestaurantsFragment;
+import com.example.android.tourguideapp.fragment.ShoppingFragment;
 import com.google.android.material.navigation.NavigationView;
 
 import androidx.annotation.NonNull;

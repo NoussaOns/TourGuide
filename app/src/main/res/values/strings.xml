@@ -19,12 +19,16 @@
 
     <!--hotels-->
     <string name="hamdan_plaza_hotel">Hamdan Plaza</string>
-    <string name="gradens_hotel">Gardens Hotel</string>
+    <string name="hamdan_plaza_url">https://www.booking.com/hotel/om/hamdan-plaza.ar.html</string>
+    <string name="gardens_hotel">Gardens Hotel</string>
+    <string name="gardens_url">http://www.safirhotels.com/</string>
     <string name="rotana_hotel">Rotana</string>
-
+    <string name="rotana_url">https://www.rotana.com/rotanahotelandresorts/oman/salalah/salalahrotanaresort</string>
+    <string name="crowne_plaza_hotel">Crowne Plaza</string>
+    <string name="crowne_plaza_url">https://www.crowneplaza.com/hotels/ae/ar/find-hotels/hotel/rates?qDest=Po%20Box%20870,%20Salalah,%20OM&amp;qCiMy=12019&amp;qCiD=10&amp;qCoMy=12019&amp;qCoD=11&amp;qAdlt=2&amp;qChld=0&amp;qRms=1&amp;qRtP=6CBARC&amp;qIta=99618783&amp;qSlH=SLLSS&amp;qSlRc=KNGS&amp;qAkamaiCC=US&amp;qBrs=re.ic.in.vn.cp.vx.hi.ex.rs.cv.sb.cw.ma.ul.ki.va&amp;qAAR=6CBARC&amp;qWch=0&amp;qSmP=1&amp;cm_mmc=hpa_OM_desktop_SLLSS_mapresults_1_OMR_2019-02-10_default_1992967289__false&amp;setPMCookies=true&amp;glat=META_hpa_OM_desktop_SLLSS_mapresults_1_OMR_2019-02-10_default_1992967289__false&amp;qRad=30&amp;qRdU=mi&amp;srb_u=1</string>
     <!--nature-->
     <string name="arzat_nature">Arzat Spring</string>
-    <string name="arzat_nature_subtitle">Lorem ipsum dolor sit amet, praesent nisl at at sollicitudin,
+    <string name="arzat_nature_subtitle">Lorem ipsum dolor sit amet, praesent nisl at sollicitudin,
         leo diam vivamus leo amet. </string>
     <string name="darbat_nature">Darbat Spring</string>
     <string name="himran_nature">Himran Spring</string>

@@ -1,4 +1,4 @@
-package com.example.android.tourguideapp;
+package com.example.android.tourguideapp.items;
 
 public class HotelsItem {
     private int mImageResource;

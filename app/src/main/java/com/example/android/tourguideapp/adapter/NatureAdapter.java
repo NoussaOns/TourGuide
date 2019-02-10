@@ -1,4 +1,4 @@
-package com.example.android.tourguideapp;
+package com.example.android.tourguideapp.adapter;
 
 import android.content.Context;
 import android.content.Intent;
@@ -9,6 +9,8 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.android.tourguideapp.items.NatureItem;
+import com.example.android.tourguideapp.R;
 import com.google.android.material.button.MaterialButton;
 
 import java.util.ArrayList;

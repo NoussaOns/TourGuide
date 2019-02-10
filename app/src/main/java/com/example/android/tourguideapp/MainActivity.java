@@ -2,9 +2,9 @@ package com.example.android.tourguideapp;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 
+import com.example.android.tourguideapp.fragment.PicturesFragment;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.tabs.TabLayout;
 
