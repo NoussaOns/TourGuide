@@ -1,7 +1,6 @@
 <resources>
     <string name="app_name">TourGuideApp</string>
     <string name="lets_go">Let\'s Go</string>
-    <string name="places">Places</string>
     <string name="activities">Activities</string>
     <string name="nature">Nature</string>
     <string name="hotels">Hotels</string>
@@ -16,7 +15,6 @@
     <!--Restaurants-->
     <string name="hamdan_plaza_restaurant">Hamdan Plaza Restaurant</string>
     <string name="sammak_restaurant">Sammak Restaurant</string>
-    <string name="sammak_url">https://www.google.com/travel/hotels/%D8%B5%D9%84%D8%A7%D9%84%D8%A9?ap=YhQxNTc3MzM3NjYwNTgwNTA1NjE5OA&amp;g2lb=4208993%2C4223281%2C4220469%2C4226113&amp;hl=ar&amp;gl=om&amp;un=0&amp;q=%D9%81%D9%86%D8%AF%D9%82%20%D8%A7%D9%84%D8%AC%D9%88%D9%8A%D8%B1%D8%A9%20%D8%B5%D9%84%D8%A7%D9%84%D8%A9&amp;rp=OAJAAEgC&amp;ictx=1&amp;ved=2ahUKEwjsqZqz37HgAhUEC-wKHYE9BwYQvS4wAXoECAUQJg&amp;hrf=CgQIMhAAIgNPTVIqFgoHCOMPEAIYExIHCOMPEAIYFBgBKACwAQCaAQwSCti12YTYp9mE2KmiARcKCS9tLzA1N2oyNBIK2LXZhNin2YTYqZIBAiAB&amp;tcfs=EjEKCS9tLzA1N2oyNBIK2LXZhNin2YTYqRoYCgoyMDE5LTAyLTE5EgoyMDE5LTAyLTIwUgA</string>
 
     <!--hotels-->
     <string name="hamdan_plaza_hotel">Hamdan Plaza</string>
@@ -40,7 +38,8 @@
     <!--Shopping-->
     <string name="carrefour_shopping">Carrefour</string>
     <string name="lulu_shopping">Lulu</string>
-    <string name="haffa_shopping">Souk Al Hisn</string>
+    <string name="carrefour_url">https://www.carrefouroman.com/</string>
+    <string name="lulu_url">http://oman.luluhypermarket.com/OM/all</string>
 
     <!--beaches-->
     <string name="maghseel_beach">Maghseel</string>

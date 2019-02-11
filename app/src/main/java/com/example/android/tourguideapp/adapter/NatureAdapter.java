@@ -46,7 +46,7 @@ public class NatureAdapter extends RecyclerView.Adapter<NatureAdapter.NatureView
         holder.mButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Uri gmmIntentUri = Uri.parse("geo:" + natureItem.getGeoCoor());
+                Uri gmmIntentUri = Uri.parse("geo:" + natureItem.getGeoCoor() + "?z=18");
                 Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
                 mapIntent.setPackage("com.google.android.apps.maps");
                 if (mapIntent.resolveActivity(mContext.getPackageManager()) != null) {

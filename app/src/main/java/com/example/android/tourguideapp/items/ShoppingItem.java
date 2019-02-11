@@ -2,14 +2,13 @@ package com.example.android.tourguideapp.items;
 
 public class ShoppingItem {
     private int mImageResource;
-    private String mTitle, mGeoCoor, mUrl, mPrice;
+    private String mTitle, mGeoCoor, mUrl;
 
-    public ShoppingItem(int imageResource, String title, String geoCoor, String url, String price) {
+    public ShoppingItem(int imageResource, String title, String geoCoor, String url) {
         mImageResource = imageResource;
         mTitle = title;
         mGeoCoor = geoCoor;
         mUrl = url;
-        mPrice = price;
     }
 
     public int getImageResource() {
@@ -28,7 +27,4 @@ public class ShoppingItem {
         return mUrl;
     }
 
-    public String getPrice() {
-        return mPrice;
-    }
 }

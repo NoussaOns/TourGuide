@@ -47,7 +47,7 @@ public class RestaurantAdapter extends RecyclerView.Adapter<RestaurantAdapter.Re
         holder.mOnMap.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Uri gmmIntentUri = Uri.parse("geo:" + restaurantItem.getGeoCoor());
+                Uri gmmIntentUri = Uri.parse("geo:" + restaurantItem.getGeoCoor() + "?z=18");
                 Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
                 mapIntent.setPackage("com.google.android.apps.maps");
                 if (mapIntent.resolveActivity(mContext.getPackageManager()) != null) {

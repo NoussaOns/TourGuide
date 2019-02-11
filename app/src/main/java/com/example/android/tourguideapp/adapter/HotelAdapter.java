@@ -48,7 +48,7 @@ public class HotelAdapter extends RecyclerView.Adapter<HotelAdapter.HotelViewHol
         holder.mOnMap.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Uri gmmIntentUri = Uri.parse("geo:" + hotelsItem.getGeoCoor());
+                Uri gmmIntentUri = Uri.parse("geo:" + hotelsItem.getGeoCoor() + "?z=18");
                 Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
                 mapIntent.setPackage("com.google.android.apps.maps");
                 if (mapIntent.resolveActivity(mContext.getPackageManager()) != null) {
