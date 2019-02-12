@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
 
-
+        //set the arrays for which the items of the pageviewer will be put to
         titles = new String[]{
                 getString(R.string.ready_to_travel),
                 getString(R.string.best_destination),
@@ -73,6 +73,7 @@ public class MainActivity extends AppCompatActivity {
 
         bottomProgressDots(0);
 
+        //set the view pager adapter to the view pager
         myViewPagerAdapter = new MyViewPagerAdapter();
         viewPager.setAdapter(myViewPagerAdapter);
         viewPager.addOnPageChangeListener(viewPagerPageChangeListener);
@@ -82,6 +83,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    //show the bottom bar dots
     private void bottomProgressDots(int current_index) {
         LinearLayout dotsLayout = findViewById(R.id.layoutDots);
         ImageView[] dots = new ImageView[MAX_STEP];
@@ -104,6 +106,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    //A custom pager adapter
     public class MyViewPagerAdapter extends PagerAdapter {
         private LayoutInflater mLayoutInflater;
         private MaterialButton mButton;

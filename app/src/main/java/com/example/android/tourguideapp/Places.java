@@ -50,6 +50,7 @@ public class Places extends AppCompatActivity {
         drawer = findViewById(R.id.drawer_layout);
 
 
+        //handle the navigation view
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
@@ -95,6 +96,7 @@ public class Places extends AppCompatActivity {
         toggle.syncState();
     }
 
+    //when the back button on the device is pressed
     @Override
     public void onBackPressed() {
         if (drawer.isDrawerOpen(GravityCompat.START)) {

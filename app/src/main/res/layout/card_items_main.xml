@@ -51,19 +51,25 @@
                 android:padding="@dimen/spacing_xlarge"
                 android:src="@drawable/vacation_holidays_background_with_realistic_globe_suitcase_photo_camera_1284_10476" />
 
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btn_next"
+            <com.balysv.materialripple.MaterialRippleLayout
+                style="@style/RippleStyleWhite"
                 android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
-                android:elevation="0dp"
-                android:gravity="center"
-                android:text="@string/next"
-                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
-                android:textColor="@android:color/white"
-                app:cornerRadius="0dp" />
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_middle">
 
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_next"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="?attr/selectableItemBackground"
+                    android:elevation="0dp"
+                    android:gravity="center"
+                    android:text="@string/next"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:textColor="@android:color/white"
+                    app:cornerRadius="0dp" />
+
+            </com.balysv.materialripple.MaterialRippleLayout>
         </LinearLayout>
-
     </com.google.android.material.card.MaterialCardView>
-
 </RelativeLayout>
