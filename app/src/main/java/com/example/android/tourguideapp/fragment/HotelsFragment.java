@@ -37,21 +37,25 @@ public class HotelsFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_hotels, container, false);
 
+        //bind the views
         ButterKnife.bind(this,view);
+
+        //add items to the arraylist
         ArrayList<HotelsItem> hotelsItems = new ArrayList<>();
         // TODO: The prices should be replaced with the ones that I have to learn how to get from the website
         hotelsItems.add(new HotelsItem(R.drawable.crowne_plaza_hotels,getString(R.string.crowne_plaza_hotel),
-                "17.009342,54.152216",getString(R.string.crowne_plaza_url),"64OMR"));
+                "17.009342,54.152216", getString(R.string.crowne_plaza_url), "64 OMR"));
 
         hotelsItems.add(new HotelsItem(R.drawable.hamdan_plaza_hotel,getString(R.string.hamdan_plaza_hotel),
-                "17.019285,54.060908",getString(R.string.hamdan_plaza_url),"46OMR"));
+                "17.019285,54.060908", getString(R.string.hamdan_plaza_url), "46 OMR"));
 
         hotelsItems.add(new HotelsItem(R.drawable.gradens_hotel,getString(R.string.gardens_hotel),
-                "17.022435,54.066085",getString(R.string.gardens_url),"50OMR"));
+                "17.022435,54.066085", getString(R.string.gardens_url), "50 OMR"));
 
         hotelsItems.add(new HotelsItem(R.drawable.rotana_hotels,getString(R.string.rotana_hotel),
-                "17.030712,54.296055",getString(R.string.rotana_url),"100OMR"));
+                "17.030712,54.296055", getString(R.string.rotana_url), "100 OMR"));
 
+        //set the recycler view
         mRecyclerView.setHasFixedSize(true);
         mLayoutManager = new LinearLayoutManager(getActivity().getBaseContext());
         mHotelAdapter = new HotelAdapter(getActivity(),hotelsItems);

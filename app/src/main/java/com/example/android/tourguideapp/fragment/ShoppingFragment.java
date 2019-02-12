@@ -2,13 +2,6 @@ package com.example.android.tourguideapp.fragment;
 
 
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-import butterknife.BindView;
-import butterknife.ButterKnife;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,6 +11,12 @@ import com.example.android.tourguideapp.adapter.ShoppingAdapter;
 import com.example.android.tourguideapp.items.ShoppingItem;
 
 import java.util.ArrayList;
+
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+import butterknife.BindView;
+import butterknife.ButterKnife;
 
 
 /**
@@ -42,7 +41,10 @@ public class ShoppingFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_shopping, container, false);
 
+        //bind the views
         ButterKnife.bind(this, view);
+
+        //add items to the arraylist
         ArrayList<ShoppingItem> shoppingItems = new ArrayList<>();
         shoppingItems.add(new ShoppingItem(R.drawable.carrefour_shopping, getString(R.string.carrefour_shopping),
                 "17.023459,54.066395", getString(R.string.carrefour_url)));
@@ -50,6 +52,7 @@ public class ShoppingFragment extends Fragment {
         shoppingItems.add(new ShoppingItem(R.drawable.lulu_shopping, getString(R.string.lulu_shopping),
                 "17.017114,54.061711", getString(R.string.lulu_url)));
 
+        //set the recycler view
         mRecyclerView.setHasFixedSize(true);
         mShoppingAdapter = new ShoppingAdapter(getActivity(), shoppingItems);
         mLayoutManager = new LinearLayoutManager(getActivity().getBaseContext());

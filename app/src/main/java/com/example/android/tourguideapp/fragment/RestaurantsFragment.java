@@ -37,7 +37,10 @@ public class RestaurantsFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_restaurants, container, false);
 
+        //bind the views
         ButterKnife.bind(this,view);
+
+        //add items to the arraylist
         ArrayList<RestaurantItem> restaurantItems = new ArrayList<>();
         restaurantItems.add(new RestaurantItem(R.drawable.hamdan_plaza_restaurant,getString(R.string.hamdan_plaza_restaurant),
                 "17.019285,54.060908",getString(R.string.hamdan_plaza_url)));
@@ -45,6 +48,7 @@ public class RestaurantsFragment extends Fragment {
         restaurantItems.add(new RestaurantItem(R.drawable.sammak_restaurant,getString(R.string.sammak_restaurant),
                 "17.031505,54.299486",getString(R.string.rotana_url)));
 
+        //set the recycler view
         mRecyclerView.setHasFixedSize(true);
         mRestaurantAdapter = new RestaurantAdapter(getActivity(),restaurantItems);
         mLayoutManager = new LinearLayoutManager(getActivity().getBaseContext());

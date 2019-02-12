@@ -35,18 +35,21 @@ public class NatureFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_nature, container, false);
+
+        //bind the views
         ButterKnife.bind(this, view);
 
+        //add items to the arraylist
         ArrayList<NatureItem> natureItems = new ArrayList<>();
         natureItems.add(new NatureItem(R.drawable.arzat_nature, getString(R.string.arzat_nature), "17.129886,54.237979"));
         natureItems.add(new NatureItem(R.drawable.darbat_nature, getString(R.string.darbat_nature), "17.105881,54.453102"));
         natureItems.add(new NatureItem(R.drawable.himran_nature, getString(R.string.himran_nature), "17.097262,54.281278"));
         natureItems.add(new NatureItem(R.drawable.jarzeez_nature, getString(R.string.jarzeez_nature), "17.105654,54.074202"));
 
+        //set the recycler view
         mRecyclerView.setHasFixedSize(true);
         mLayoutManager = new LinearLayoutManager(getActivity().getBaseContext());
         mAdapter = new NatureAdapter(getActivity(), natureItems);
-
         mRecyclerView.setLayoutManager(mLayoutManager);
         mRecyclerView.setAdapter(mAdapter);
 

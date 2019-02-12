@@ -41,18 +41,21 @@ public class BeachesFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_beaches, container, false);
+
+        //bind the views
         ButterKnife.bind(this, view);
 
+        //add items to the arraylist
         ArrayList<BeachesItem> beachesItems = new ArrayList<>();
         beachesItems.add(new BeachesItem(R.drawable.dahareez_beaches, getString(R.string.dahareez_beach), "17.010333,54.169398"));
         beachesItems.add(new BeachesItem(R.drawable.haffa_beach, getString(R.string.haffa_beach), "17.001538,54.113047"));
         beachesItems.add(new BeachesItem(R.drawable.maghseel_beaches, getString(R.string.maghseel_beach), "16.875488,53.766112"));
         beachesItems.add(new BeachesItem(R.drawable.mirbat_beaches, getString(R.string.mirbat_beach), "16.978485,54.686737"));
 
+        //set the recycler view
         mRecyclerView.setHasFixedSize(true);
         mLayoutManager = new LinearLayoutManager(getActivity().getBaseContext());
         mAdapter = new BeachesAdapter(getActivity(), beachesItems);
-
         mRecyclerView.setLayoutManager(mLayoutManager);
         mRecyclerView.setAdapter(mAdapter);
 
