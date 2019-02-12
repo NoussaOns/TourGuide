@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">TourGuideApp</string>
-    <string name="lets_go">Let\'s Go</string>
     <string name="activities">Activities</string>
     <string name="nature">Nature</string>
     <string name="hotels">Hotels</string>
@@ -11,6 +10,14 @@
     <string name="salalah">Salalah</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="ready_to_travel">Ready to Travel</string>
+    <string name="ready_to_travel_text">Time to travel to one of the best areas in the Middle East! Take your time to explore the best sites found here!</string>
+    <string name="best_destination">Best Destination</string>
+    <string name="best_destination_text">Consider Salalah to be your vey first destination. Wonderful nature, beaches and shopping places you can find here!</string>
+    <string name="best_hotels">Best Hotels</string>
+    <string name="best_hotels_text">Hotels cover all your needs with affordable prices. Welcome!</string>
+    <string name="get_started">Get Started</string>
+    <string name="next">Next</string>
 
     <!--Restaurants-->
     <string name="hamdan_plaza_restaurant">Hamdan Plaza Restaurant</string>
