@@ -58,4 +58,19 @@
     <string name="book_now">Book Now</string>
     <string name="go_online">Go Online</string>
     <string name="on_map">On map</string>
+
+    <!--location-->
+    <string name="gps_crowne_plaza">17.009342,54.152216</string>
+    <string name="gps_hamdan_plaza">17.019285,54.060908</string>
+    <string name="gps_gardens">17.022435,54.066085</string>
+    <string name="gps_rotana">17.030712,54.296055</string>
+    <string name="gps_lulu">17.017114,54.061711</string>
+    <string name="gps_dahareez">17.010333,54.169398</string>
+    <string name="gps_haffa">17.001538,54.113047</string>
+    <string name="gps_maghseel">16.875488,53.766112</string>
+    <string name="gps_mirbat">16.978485,54.686737</string>
+    <string name="gps_arzat">17.129886,54.237979</string>
+    <string name="gps_darbat">17.129886,54.237979</string>
+    <string name="gps_himran">17.097262,54.281278</string>
+    <string name="gps_jarzeez">17.105654,54.074202</string>
 </resources>

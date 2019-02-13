@@ -10,7 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.android.tourguideapp.R;
-import com.example.android.tourguideapp.items.HotelsItem;
+import com.example.android.tourguideapp.items.PlacesItems;
 import com.google.android.material.button.MaterialButton;
 
 import java.util.ArrayList;
@@ -22,10 +22,10 @@ import butterknife.ButterKnife;
 
 public class HotelAdapter extends RecyclerView.Adapter<HotelAdapter.HotelViewHolder> {
 
-    private ArrayList<HotelsItem> mHotelsItems;
+    private ArrayList<PlacesItems> mHotelsItems;
     private Context mContext;
 
-    public HotelAdapter(Context context, ArrayList<HotelsItem> hotelsItems){
+    public HotelAdapter(Context context, ArrayList<PlacesItems> hotelsItems) {
         mHotelsItems = hotelsItems;
         mContext = context;
     }
@@ -34,13 +34,12 @@ public class HotelAdapter extends RecyclerView.Adapter<HotelAdapter.HotelViewHol
     @Override
     public HotelAdapter.HotelViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(mContext).inflate(R.layout.hotels_item,parent,false);
-        HotelViewHolder hotelViewHolder = new HotelViewHolder(view);
-        return hotelViewHolder;
+        return new HotelViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull HotelAdapter.HotelViewHolder holder, int position) {
-        HotelsItem hotelsItem = mHotelsItems.get(position);
+        PlacesItems hotelsItem = mHotelsItems.get(position);
 
         holder.mTitle.setText(hotelsItem.getTitle());
         holder.mImageView.setImageResource(hotelsItem.getImageResource());

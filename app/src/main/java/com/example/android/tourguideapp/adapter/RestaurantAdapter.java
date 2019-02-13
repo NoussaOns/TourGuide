@@ -10,7 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.android.tourguideapp.R;
-import com.example.android.tourguideapp.items.RestaurantItem;
+import com.example.android.tourguideapp.items.PlacesItems;
 import com.google.android.material.button.MaterialButton;
 
 import java.util.ArrayList;
@@ -22,10 +22,10 @@ import butterknife.ButterKnife;
 
 public class RestaurantAdapter extends RecyclerView.Adapter<RestaurantAdapter.RestaurantViewHolder> {
 
-    private ArrayList<RestaurantItem> mRestaurantItems;
+    private ArrayList<PlacesItems> mRestaurantItems;
     private Context mContext;
 
-    public RestaurantAdapter(Context context, ArrayList<RestaurantItem> restaurantItems){
+    public RestaurantAdapter(Context context, ArrayList<PlacesItems> restaurantItems) {
         mRestaurantItems = restaurantItems;
         mContext = context;
     }
@@ -34,13 +34,12 @@ public class RestaurantAdapter extends RecyclerView.Adapter<RestaurantAdapter.Re
     @Override
     public RestaurantAdapter.RestaurantViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(mContext).inflate(R.layout.restaurant_item,parent,false);
-        RestaurantViewHolder restaurantViewHolder = new RestaurantViewHolder(view);
-        return restaurantViewHolder;
+        return new RestaurantViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull RestaurantAdapter.RestaurantViewHolder holder, int position) {
-        RestaurantItem restaurantItem = mRestaurantItems.get(position);
+        PlacesItems restaurantItem = mRestaurantItems.get(position);
 
         holder.mTitle.setText(restaurantItem.getTitle());
         holder.mImageView.setImageResource(restaurantItem.getImageResource());

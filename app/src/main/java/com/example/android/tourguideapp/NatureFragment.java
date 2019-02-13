@@ -13,7 +13,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.android.tourguideapp.adapter.NatureAdapter;
-import com.example.android.tourguideapp.items.NatureItem;
+import com.example.android.tourguideapp.items.PlacesItems;
 
 import java.util.ArrayList;
 
@@ -40,11 +40,11 @@ public class NatureFragment extends Fragment {
         ButterKnife.bind(this, view);
 
         //add items to the arraylist
-        ArrayList<NatureItem> natureItems = new ArrayList<>();
-        natureItems.add(new NatureItem(R.drawable.arzat_nature, getString(R.string.arzat_nature), "17.129886,54.237979"));
-        natureItems.add(new NatureItem(R.drawable.darbat_nature, getString(R.string.darbat_nature), "17.105881,54.453102"));
-        natureItems.add(new NatureItem(R.drawable.himran_nature, getString(R.string.himran_nature), "17.097262,54.281278"));
-        natureItems.add(new NatureItem(R.drawable.jarzeez_nature, getString(R.string.jarzeez_nature), "17.105654,54.074202"));
+        ArrayList<PlacesItems> natureItems = new ArrayList<>();
+        natureItems.add(new PlacesItems(R.drawable.arzat_nature, getString(R.string.arzat_nature), getString(R.string.gps_arzat)));
+        natureItems.add(new PlacesItems(R.drawable.darbat_nature, getString(R.string.darbat_nature), getString(R.string.gps_darbat)));
+        natureItems.add(new PlacesItems(R.drawable.himran_nature, getString(R.string.himran_nature), getString(R.string.gps_himran)));
+        natureItems.add(new PlacesItems(R.drawable.jarzeez_nature, getString(R.string.jarzeez_nature), getString(R.string.gps_jarzeez)));
 
         //set the recycler view
         mRecyclerView.setHasFixedSize(true);

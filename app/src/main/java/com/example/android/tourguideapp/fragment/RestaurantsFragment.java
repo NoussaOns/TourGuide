@@ -14,7 +14,7 @@ import android.view.ViewGroup;
 
 import com.example.android.tourguideapp.R;
 import com.example.android.tourguideapp.adapter.RestaurantAdapter;
-import com.example.android.tourguideapp.items.RestaurantItem;
+import com.example.android.tourguideapp.items.PlacesItems;
 
 import java.util.ArrayList;
 
@@ -41,12 +41,12 @@ public class RestaurantsFragment extends Fragment {
         ButterKnife.bind(this,view);
 
         //add items to the arraylist
-        ArrayList<RestaurantItem> restaurantItems = new ArrayList<>();
-        restaurantItems.add(new RestaurantItem(R.drawable.hamdan_plaza_restaurant,getString(R.string.hamdan_plaza_restaurant),
-                "17.019285,54.060908",getString(R.string.hamdan_plaza_url)));
+        ArrayList<PlacesItems> restaurantItems = new ArrayList<>();
+        restaurantItems.add(new PlacesItems(R.drawable.hamdan_plaza_restaurant, getString(R.string.hamdan_plaza_restaurant),
+                getString(R.string.gps_hamdan_plaza), getString(R.string.hamdan_plaza_url)));
 
-        restaurantItems.add(new RestaurantItem(R.drawable.sammak_restaurant,getString(R.string.sammak_restaurant),
-                "17.031505,54.299486",getString(R.string.rotana_url)));
+        restaurantItems.add(new PlacesItems(R.drawable.sammak_restaurant, getString(R.string.sammak_restaurant),
+                getString(R.string.gps_rotana), getString(R.string.rotana_url)));
 
         //set the recycler view
         mRecyclerView.setHasFixedSize(true);

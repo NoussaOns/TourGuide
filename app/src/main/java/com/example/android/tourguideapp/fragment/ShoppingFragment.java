@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 
 import com.example.android.tourguideapp.R;
 import com.example.android.tourguideapp.adapter.ShoppingAdapter;
-import com.example.android.tourguideapp.items.ShoppingItem;
+import com.example.android.tourguideapp.items.PlacesItems;
 
 import java.util.ArrayList;
 
@@ -45,12 +45,12 @@ public class ShoppingFragment extends Fragment {
         ButterKnife.bind(this, view);
 
         //add items to the arraylist
-        ArrayList<ShoppingItem> shoppingItems = new ArrayList<>();
-        shoppingItems.add(new ShoppingItem(R.drawable.carrefour_shopping, getString(R.string.carrefour_shopping),
-                "17.023459,54.066395", getString(R.string.carrefour_url)));
+        ArrayList<PlacesItems> shoppingItems = new ArrayList<>();
+        shoppingItems.add(new PlacesItems(R.drawable.carrefour_shopping, getString(R.string.carrefour_shopping),
+                getString(R.string.gps_gardens), getString(R.string.carrefour_url)));
 
-        shoppingItems.add(new ShoppingItem(R.drawable.lulu_shopping, getString(R.string.lulu_shopping),
-                "17.017114,54.061711", getString(R.string.lulu_url)));
+        shoppingItems.add(new PlacesItems(R.drawable.lulu_shopping, getString(R.string.lulu_shopping),
+                getString(R.string.gps_lulu), getString(R.string.lulu_url)));
 
         //set the recycler view
         mRecyclerView.setHasFixedSize(true);

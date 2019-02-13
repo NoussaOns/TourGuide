@@ -10,7 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.android.tourguideapp.R;
-import com.example.android.tourguideapp.items.BeachesItem;
+import com.example.android.tourguideapp.items.PlacesItems;
 import com.google.android.material.button.MaterialButton;
 
 import java.util.ArrayList;
@@ -21,10 +21,10 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 public class BeachesAdapter extends RecyclerView.Adapter<BeachesAdapter.BeachesViewHolder> {
-    private ArrayList<BeachesItem> mBeachesItems;
+    private ArrayList<PlacesItems> mBeachesItems;
     private Context mContext;
 
-    public BeachesAdapter(Context context, ArrayList<BeachesItem> beachesItems) {
+    public BeachesAdapter(Context context, ArrayList<PlacesItems> beachesItems) {
         mBeachesItems = beachesItems;
         mContext = context;
     }
@@ -33,13 +33,12 @@ public class BeachesAdapter extends RecyclerView.Adapter<BeachesAdapter.BeachesV
     @Override
     public BeachesViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(mContext).inflate(R.layout.beaches_item, parent, false);
-        BeachesViewHolder beachesViewHolder = new BeachesViewHolder(view);
-        return beachesViewHolder;
+        return new BeachesViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull BeachesViewHolder holder, int position) {
-        BeachesItem beachesItem = mBeachesItems.get(position);
+        PlacesItems beachesItem = mBeachesItems.get(position);
 
         holder.mImageView.setImageResource(beachesItem.getImageResource());
         holder.mTitle.setText(beachesItem.getTitle());

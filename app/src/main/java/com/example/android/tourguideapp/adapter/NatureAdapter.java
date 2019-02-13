@@ -9,8 +9,8 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.android.tourguideapp.items.NatureItem;
 import com.example.android.tourguideapp.R;
+import com.example.android.tourguideapp.items.PlacesItems;
 import com.google.android.material.button.MaterialButton;
 
 import java.util.ArrayList;
@@ -21,10 +21,10 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 public class NatureAdapter extends RecyclerView.Adapter<NatureAdapter.NatureViewHolder> {
-    private ArrayList<NatureItem> mNatureItems;
+    private ArrayList<PlacesItems> mNatureItems;
     private Context mContext;
 
-    public NatureAdapter(Context context, ArrayList<NatureItem> natureItems) {
+    public NatureAdapter(Context context, ArrayList<PlacesItems> natureItems) {
         mNatureItems = natureItems;
         mContext = context;
     }
@@ -33,13 +33,12 @@ public class NatureAdapter extends RecyclerView.Adapter<NatureAdapter.NatureView
     @Override
     public NatureViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(mContext).inflate(R.layout.nature_item, parent, false);
-        NatureViewHolder natureViewHolder = new NatureViewHolder(view);
-        return natureViewHolder;
+        return new NatureViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull NatureViewHolder holder, int position) {
-        NatureItem natureItem = mNatureItems.get(position);
+        PlacesItems natureItem = mNatureItems.get(position);
 
         holder.mImageView.setImageResource(natureItem.getImageResource());
         holder.mTitle.setText(natureItem.getTitle());

@@ -10,7 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.android.tourguideapp.R;
-import com.example.android.tourguideapp.items.ShoppingItem;
+import com.example.android.tourguideapp.items.PlacesItems;
 import com.google.android.material.button.MaterialButton;
 
 import java.util.ArrayList;
@@ -22,10 +22,10 @@ import butterknife.ButterKnife;
 
 public class ShoppingAdapter extends RecyclerView.Adapter<ShoppingAdapter.ShoppingViewHolder> {
 
-    private ArrayList<ShoppingItem> mShoppingItems;
+    private ArrayList<PlacesItems> mShoppingItems;
     private Context mContext;
 
-    public ShoppingAdapter(Context context, ArrayList<ShoppingItem> shoppingItems) {
+    public ShoppingAdapter(Context context, ArrayList<PlacesItems> shoppingItems) {
         mShoppingItems = shoppingItems;
         mContext = context;
     }
@@ -34,13 +34,12 @@ public class ShoppingAdapter extends RecyclerView.Adapter<ShoppingAdapter.Shoppi
     @Override
     public ShoppingAdapter.ShoppingViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(mContext).inflate(R.layout.shopping_item, parent, false);
-        ShoppingViewHolder shoppingViewHolder = new ShoppingViewHolder(view);
-        return shoppingViewHolder;
+        return new ShoppingViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull ShoppingAdapter.ShoppingViewHolder holder, int position) {
-        ShoppingItem shoppingItem = mShoppingItems.get(position);
+        PlacesItems shoppingItem = mShoppingItems.get(position);
 
         holder.mTitle.setText(shoppingItem.getTitle());
         holder.mImageView.setImageResource(shoppingItem.getImageResource());
